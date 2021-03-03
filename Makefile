@@ -1,6 +1,11 @@
 all: install
 
-install:
+install: install-root install-code
+
+install-root:
+	@terraform get
+
+install-code:
 	@cd code && yarn --silent install --prod
 
 build:
