@@ -1,5 +1,8 @@
 all: install
 
+format:
+	@terraform fmt -recursive
+
 install: install-root install-code
 
 install-root:
@@ -15,4 +18,4 @@ test:
 	@cd  code && yarn --silent test
 
 
-.PHONY: all build install test
+.PHONY: all build format install test

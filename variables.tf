@@ -8,35 +8,35 @@ variable "package_file" {
   type = string
 }
 variable "config_file" {
-  type = string
+  type    = string
   default = ""
 }
 variable "config_statics_file" {
-  type = string
+  type    = string
   default = ""
 }
 variable "config_routes_file" {
-  type = string
+  type    = string
   default = ""
 }
 variable "site_webmanifest_file" {
-  type = string
+  type    = string
   default = ""
 }
 variable "utils_file" {
-  type = string
+  type    = string
   default = ""
 }
 variable "healthz_file" {
-  type = string
+  type    = string
   default = ""
 }
 variable "robots_file" {
-  type = string
+  type    = string
   default = ""
 }
 variable "sitemap_file" {
-  type = string
+  type    = string
   default = ""
 }
 variable "runtime" {

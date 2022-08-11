@@ -2,7 +2,7 @@ data "archive_file" "lambda-code" {
   type        = "zip"
   output_path = var.package_file
   source_dir  = var.code_dir
-  depends_on  = [
+  depends_on = [
     local_file.file,
   ]
 }
